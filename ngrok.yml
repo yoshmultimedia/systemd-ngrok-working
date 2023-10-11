@@ -1,9 +1,13 @@
-version: "2"
-authtoken: <add_your_token_here>
+version: 2
+authtoken: 2W5afG1L7DAkHKzPTi3DkuL4ZrD_6czPpNrEmeN1CahWD8U5z
 tunnels:
-    web:
+  server32:
+    labels:
+      - edge=edghts_2WdW8n9foP1vhxN4Z5C6BfN0Swq
+    addr: http://localhost:80
+  speed:
         proto: http
-        addr: 80
-    ssh:
+        addr: 3004
+  ssh:
         proto: tcp
         addr: 22
